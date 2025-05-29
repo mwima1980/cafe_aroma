@@ -7,57 +7,53 @@
 
 /* Fonts */
 @font-face {
-  font-family: Montserrat;
-  src: url("./src/Fonts/Montserrat-Regular.ttf") format("truetype");
+  font-family: OpenSans;
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: Roboto;
-  src: url("./src/Fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: PlayFair;
+  src: url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
 }
 
 /* Typescaling */
 h1 {
   font-size: 5.613rem;
-  font-family: Montserrat;
+  font-family: OpenSans;
 }
 h2 {
   font-size: 4.206rem;
-  font-family: Montserrat;
+  font-family: OpenSans;
 }
 h3 {
   font-size: 3.156rem;
-  font-family: Montserrat;
+  font-family: OpenSans;
 }
 h4 {
   font-size: 2.369rem;
-  font-family: Roboto;
+  font-family: PlayFair;
 }
 h5 {
   font-size: 1.775rem;
-  font-family: Roboto;
+  font-family: PlayFair;
 }
 h6 {
   font-size: 1.331rem;
-  font-family: Roboto;
+  font-family: PlayFair;
 }
 p {
   font-size: 1rem;
-  font-family: Roboto;
+  font-family: PlayFair;
 }
 small {
   font-size: 0.75rem;
-  font-family: Roboto;
+  font-family: PlayFair;
 }
 
 /* Variablen / Color */
 :root {
-  --color1: #373f51;
-  --color2: #d8dbe2;
-  --color3: #61e786;
-  --color4: #d81e5b;
-  --color5: #f19a3e;
-  --Color1Opa: ;
-  --realWhite: #fafafa;
+  --color1: #6b4c3b;
+  --color2: #f3e9dc;
+  --color3: #ffffff;
 }
 
 /* Media - Queries */
@@ -67,7 +63,6 @@ small {
   padding-right: 1;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid red;
 }
 
 @media (min-width: 576px) {
