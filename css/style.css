@@ -56,6 +56,40 @@ small {
   --color3: #ffffff;
 }
 
+/* Header */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: 1rem;
+}
+
+.navbar-left {
+  margin-left: 2rem;
+  h1 {
+    font-size: 1.331rem;
+  }
+}
+
+.navbar-right {
+  display: flex;
+  list-style: none;
+  margin-right: 2rem;
+  .navbar-item {
+    margin: 1rem;
+    a {
+      text-decoration: none;
+      color: var(--color2);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 /* Media - Queries */
 .container {
   width: 95%;
