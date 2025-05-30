@@ -51,8 +51,8 @@ small {
 
 /* Variablen / Color */
 :root {
-  --color1: #6b4c3b;
-  --color2: #f3e9dc;
+  --bg-color: #6b4c3b;
+  --text-color: #f3e9dc;
   --color3: #ffffff;
 }
 
@@ -62,8 +62,8 @@ small {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color1);
-  color: var(--color2);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   padding: 1rem;
 }
 
@@ -76,10 +76,11 @@ small {
 
 .navbar-right {
   display: flex;
+  gap: 2rem;
   list-style: none;
   margin-right: 2rem;
+  padding: 0.5rem 0.75rem;
   .navbar-item {
-    margin: 1rem;
     a {
       text-decoration: none;
       color: var(--color2);
