@@ -56,7 +56,7 @@ small {
   --color3: #ffffff;
 }
 
-/* Header - Bereich */
+/* Header - Section */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -91,7 +91,7 @@ small {
   }
 }
 
-/* Hero - Bereich */
+/* Hero - Section */
 .hero-section {
   background-image: url("/img/HeroBild.png");
   background-size: cover;
@@ -125,6 +125,28 @@ small {
     p {
       font-size: 1.2rem;
     }
+  }
+}
+
+/* About us - Section */
+.about-us-section {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 20px;
+  width: 100%;
+  max-width: auto;
+  padding: 50px 150px 50px 150px;
+  .text-container {
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+  }
+  img {
+    height: 400px;
+    width: 400px;
   }
 }
 
