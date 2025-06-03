@@ -18,7 +18,7 @@
 /* Typescaling */
 h1 {
   font-size: 5.613rem;
-  font-family: OpenSans;
+  font-family: PlayFair;
 }
 h2 {
   font-size: 4.206rem;
@@ -62,18 +62,15 @@ small {
   justify-content: space-between;
   padding: 1rem;
   background-color: var(--bg-color);
+  align-items: center;
 }
 .header-section h1 {
-  display: flex;
   font-size: 1.5rem;
   margin-left: 1rem;
   align-items: center;
   color: var(--text-color);
 }
-.header-section .nav-section {
-  display: flex;
-  align-items: center;
-}
+
 .header-section .nav-section ul {
   display: flex;
   margin-right: 1rem;
@@ -84,10 +81,50 @@ small {
 .header-section .nav-section ul li a {
   text-decoration: none;
   color: var(--text-color);
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+}
+.header-section .nav-section ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.header-section .nav-section ul li a:focus {
+  text-decoration: underline;
+}
+
+/*  Hero - Section */
+.hero-section {
+  position: relative;
+  height: 60vh;
+  background-image: url("../img/HeroBild.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(107, 76, 59, 0.6) 0%), rgba(107, 76, 59, 0.2) 100%;
+}
+.hero-section .text-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: var(--text-color);
+  text-align: center;
+}
+.hero-section .text-content h2 {
+  font-size: 3rem;
+  font-family: PlayFair;
+  margin-bottom: 1.5rem;
+}
+.hero-section .text-content p {
+  font-family: OpenSans;
 }
 
 /* Media - Queries */
