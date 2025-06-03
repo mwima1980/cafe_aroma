@@ -56,97 +56,37 @@ small {
   --color3: #ffffff;
 }
 
-/* Header - Section */
-.navbar {
+/* HEADER - SECTION */
+.header-section {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  background-color: var(--bg-color);
-  color: var(--text-color);
   padding: 1rem;
+  background-color: var(--bg-color);
 }
-
-.navbar-left {
-  margin-left: 2rem;
-  h1 {
-    font-size: 1.331rem;
-  }
-}
-
-.navbar-right {
+.header-section h1 {
   display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin-right: 2rem;
-  padding: 0.5rem 0.75rem;
-  .navbar-item {
-    a {
-      text-decoration: none;
-      color: var(--color2);
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-/* Hero - Section */
-.hero-section {
-  background-image: url("/img/HeroBild.png");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  position: relative;
-  display: flex;
-  justify-content: center;
+  font-size: 1.5rem;
+  margin-left: 1rem;
   align-items: center;
   color: var(--text-color);
-  min-height: 60vh;
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(107, 76, 59, 0.6) 0%, rgba(107, 76, 59, 0.6) 100%);
-  }
-  .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--text-color);
-    text-align: center;
-    padding: 1rem;
-    h2 {
-      font-size: 3rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-  }
 }
-
-/* About us - Section */
-.about-us-section {
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 20px;
-  width: 100%;
-  max-width: auto;
-  padding: 50px 150px 50px 150px;
-  .text-container {
-    h3 {
-      font-size: 2.5rem;
-      font-weight: 100;
-    }
-  }
-  img {
-    height: 400px;
-    width: 400px;
+.header-section .nav-section {
+  display: flex;
+  align-items: center;
+}
+.header-section .nav-section ul {
+  display: flex;
+  margin-right: 1rem;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+.header-section .nav-section ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -159,7 +99,7 @@ small {
   margin-right: auto;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .container {
     width: 90%;
   }
@@ -200,4 +140,4 @@ small {
   html {
     font-size: 1.3rem;
   }
-}
+} */
