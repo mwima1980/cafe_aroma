@@ -97,7 +97,7 @@ small {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  min-height: 50vh;
   color: var(--text-color);
 }
 .hero-container .overlay {
@@ -137,7 +137,7 @@ small {
   width: 60%;
   height: auto;
 }
-/* Specialties */
+/* Specialties - Section*/
 .specialties-container {
   background-color: var(--text-color);
   color: var(--bg-color);
@@ -153,17 +153,13 @@ small {
   border: 1px solid black;
   padding: 2rem;
 }
-.grid-container .grid-container-content {
-  border: 1px solid black;
-  padding: 2rem;
-}
 .grid-container .grid-container-content .headline {
   margin-bottom: 0.5rem;
 }
-/* Footer */
+/* Footer - Section */
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
   column-gap: 5rem;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -197,8 +193,8 @@ small {
   background-color: #a1a0a0;
 }
 .social-media-container img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .social-media-container {
   display: flex;
