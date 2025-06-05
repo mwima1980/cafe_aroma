@@ -114,6 +114,30 @@ small {
   align-items: center;
   gap: 1rem;
 }
+/* About - Us - Section */
+.about-us-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.5rem 0 2.5rem 5.3rem;
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+.about-us-section .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 1rem;
+}
+.about-us-section .picture-container {
+  display: flex;
+  justify-content: center;
+}
+.about-us-section .picture-container img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
 
 /* Media - Queries */
 /* .container {
